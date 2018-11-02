@@ -5,15 +5,23 @@ function Pizza(toppings, size) {
 }
 
 Pizza.prototype.cost = function() {
-  if (this.size === 10) {
-    this.price = "$6.00"
-  } else if (this.size === 12) {
-    this.price = "$8.00"
-  } else if (this.size === 14) {
-    this.price = "$10.00"
-  } else if (this.size === 16) {
-    this.price = "$12.00"
+  for(var i = 0; i < this.toppings.length; i++) {
+    this.price += 0.50
+    console.log(this.price);
   }
+  // this.toppings.forEach(function(topping) {
+  //   this.price += 1
+  //   console.log(this.price);
+  // });
+  // if (this.size === 10) {
+  //   this.price = "$6.00"
+  // } else if (this.size === 12) {
+  //   this.price = "$8.00"
+  // } else if (this.size === 14) {
+  //   this.price = "$10.00"
+  // } else if (this.size === 16) {
+  //   this.price = "$12.00"
+  // }
 }
 
 var smallPizza = new Pizza(["pepperoni", "mushrooms"], 10)
