@@ -9,7 +9,14 @@ Pizza.prototype.cost = function() {
     this.price = "$6.00"
   } else if (this.size === 12) {
     this.price = "$8.00"
+  } else if (this.size === 14) {
+    this.price = "$10.00"
+  } else if (this.size === 16) {
+    this.price = "$12.00"
   }
 }
 
-var testPizza = new Pizza(["pepperoni", "mushrooms"], 12)
+var smallPizza = new Pizza(["pepperoni", "mushrooms"], 10)
+var mediumPizza = new Pizza(["pepperoni", "mushrooms"], 12)
+var largePizza = new Pizza(["pepperoni", "mushrooms"], 14)
+var extraLargePizza = new Pizza(["pepperoni", "mushrooms"], 16)
