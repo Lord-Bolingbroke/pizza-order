@@ -17,22 +17,25 @@
         <strong>Please select a size</strong>
         <select class="form-control" id="size">
           <option>Please select an option</option>
-          <option>10 inch</option>
-          <option>12 inch</option>
-          <option>14 inch</option>
-          <option>16 inch</option>
+          <option value=10>10 inches</option>
+          <option value=12>12 inches</option>
+          <option value=14>14 inches</option>
+          <option value=16>16 inches</option>
         </select>
         <br>
         <div class="form-group">
           <strong>Please select toppings</strong><br>
-          <input type="checkbox" name="toppings" value="">Pepperoni<br>
-          <input type="checkbox" name="" value="">Sausage<br>
-          <input type="checkbox" name="" value="">Mushrooms<br>
-          <input type="checkbox" name="" value="">Anchovies<br>
-          <input type="checkbox" name="" value="">Pineapple<br>
+          <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni<br>
+          <input type="checkbox" name="toppings" value="Sausage">Sausage<br>
+          <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="Anchovies">Anchovies<br>
+          <input type="checkbox" name="toppings" value="Pineapple">Pineapple<br>
         </div>
-
+        <button type="submit">Submit order</button>
       </form>
+      <div id="results">
+        <p>The cost of your pizza is: <span id="price"></span><p>
+      </div>
     </div>
   </body>
 </html>
